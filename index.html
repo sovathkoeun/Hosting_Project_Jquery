@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Project Jquery Hosting</title>
+</head>
+<body>
+    <div class="container">
+        <img id="image" src="image/foodsds.png" alt="food">
+        <p id="p"></p>
+        <br>
+        <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4">
+                <!-- Choose list Recipes -->
+                <form action="#" id="action">
+                    <div class="form-group btn btn-primary">
+                        <select id="choose" class="form-control">
+                            <option disabled selected>Choose Recipe</option>
+                        </select>
+                    </div>
+                    <hr>
+                </form>
+            </div>
+            <div class="col-4"></div>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- for output image header -->
+                        <table class="table table-borderless" id="result">
+                        </table>
+                    </div>
+                </div>
+                <div class="row mt-5" id="hide">
+                    <!-- <div class="col-4"></div> -->
+                    <div class="col-3"></div>
+                    <div class="col-3" id="text"><strong class="text-primary">Number of persons</strong></div>
+                         <div class="col-3">
+                        <!-- <div class="col-4"></div> -->
+                        <div class="input-group mb-3">
+                            <!-- calutate number open -->
+                            <div class="input-group-append">
+                                <button class="btn btn-success" id="substract"> - </button>
+                            </div>
+                                <input type="text" id="caculate" class="form-control text-center" disabled value="0">
+                            <div class="input-group-append">
+                                <button class="btn btn-success" id="Adds"> + </button>
+                            </div>
+                            <!-- calutate number close -->
+                        </div>
+                    </div>
+                    <div class="col-3"></div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-5">
+                        <h4 class="text-center" id="Ingredients"></h4>
+                        <table class="table table-borderless" id="output"> </table>
+                    </div>
+                        <div class="col-2 text-center Modalrolue" id="modalhide"></div>
+                    <div class="col-6">
+                        <h4 class="text-center" id="Instructions"></h4>
+                        <!-- cute step -->
+                        <p id="step"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>   
+    <script src="js/project.js"></script>
+</body>
+</html>
